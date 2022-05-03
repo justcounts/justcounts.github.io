@@ -81,10 +81,14 @@ title: {
 text: ''
 },
 xAxis: {
-title: {
-  text: ''
+type: 'datetime',
+tickPixelInterval: 100,
+gridLineColor: '#transparent',
+labels: {
+    style: {
+        color: 'white'
+    }
 },
-
 minorGridLineColor: '#transparent',
 tickColor: 'white',
 title: {
@@ -97,7 +101,6 @@ yAxis: {
 title: {
   text: ''
 },
-
 gridLineColor: '#transparent',
 labels: {
     style: {
@@ -109,7 +112,7 @@ minorGridLineColor: 'transparent',
 tickColor: 'white'
 },
 credits: {
-enabled: true,
+enabled: false,
 text: "Subscriberwars.space"
 },
 series: [{
