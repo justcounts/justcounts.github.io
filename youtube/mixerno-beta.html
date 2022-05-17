@@ -66,13 +66,13 @@ function checkForNew(chanid) {
     headerImage.src='https://www.banner.yt/'+chanid+'?width=1240';
 
     fetch('https://mixerno.space/api/estimation-test/user/'+chanid+'').then(res => res.json()).then(data => {
-        title.innerHTML = data.user[0].count
-        logo.src = data.user[1].count
-        subcount.innerHTML = data.counts[0].count
-        viewcount.innerHTML = data.counts[3].count
-        videocount.innerHTML = data.counts[5].count
-        graphstat.innerHTML = data.counts[0].count
-        var yep=(graphstat.innerHTML)
+        title2.innerHTML = data.user[0].count
+        logo2.src = data.user[1].count
+        subcount2.innerHTML = data.counts[0].count
+        viewcount2.innerHTML = data.counts[3].count
+        videocount2.innerHTML = data.counts[5].count
+        graphstat2.innerHTML = data.counts[0].count
+        var yep=(graphstat2.innerHTML)
         console.log(yep)
         var injection=yep
         if(graph.series[0].points.length>=900)graph.series[0].data[0].remove();
